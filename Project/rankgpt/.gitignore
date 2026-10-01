@@ -1,0 +1,10 @@
+data/
+results/
+models/
+hf_cache/
+*.out
+*.err
+__pycache__/
+*.pyc
+.venv*/
+.ipynb_checkpoints/
