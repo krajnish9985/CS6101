@@ -1,0 +1,30 @@
+# Data and indexes (regenerate with Member 1's notebook)
+data/
+indexes/
+rankgpt_project/
+
+# Model weights
+models/
+*.safetensors
+*.bin
+
+# Experiment outputs
+results/
+*.trec
+*.out
+*.err
+slurm-*.out
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+envs/
+
+# Editors / OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store

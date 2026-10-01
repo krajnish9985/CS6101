@@ -1,0 +1,13 @@
+# Member 3 (LLM permutation generation)
+vllm>=0.6.0
+transformers>=4.44.0
+accelerate
+pyyaml
+
+# Shared with Members 1 and 2 (evaluation)
+pytrec_eval
+pandas
+tqdm
+
+# Dev
+pytest

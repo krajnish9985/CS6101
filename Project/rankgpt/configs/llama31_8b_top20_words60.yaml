@@ -1,0 +1,27 @@
+# ABLATION C: harsher passage truncation (60 words instead of 120).
+run_name: llama31-8b-top20-words60
+dataset: scifact
+data_path: data/scifact/reranking_data.jsonl
+qrels_path: data/scifact/qrels.tsv
+output_dir: results
+seed: 42
+limit_queries: null
+pad_to_full_list: true
+model:
+  name_or_path: /home/cccp/25m2125/VAMSI/models/Llama-3.1-8B-Instruct
+  short_name: llama31-8b
+  tensor_parallel_size: 1
+  max_model_len: 8192
+  gpu_memory_utilization: 0.9
+  dtype: bfloat16
+prompt:
+  style: single_turn
+  max_passage_words: 60
+  include_title: true
+rerank:
+  mode: single_window
+  top_k: 20
+  shuffle_candidates: false
+generation:
+  temperature: 0.0
+  max_tokens: 256
