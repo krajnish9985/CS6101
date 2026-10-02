@@ -1,0 +1,6 @@
+{
+  "extraPaths": ["src"],
+  "venvPath": "/home/cccp/25m2125/miniconda3/envs",
+  "venv": "rankgpt",
+  "reportMissingImports": "warning"
+}

@@ -1,0 +1,25 @@
+run_name: qwen7b_scifact_top20_paper
+dataset: scifact
+data: data/scifact/scifact_reranking_data.jsonl
+
+depth: 20
+prompt: paper
+max_passage_words: 300
+
+limit: null
+chunk_size: 64
+
+notes: >
+  qwen2.5-7b-instruct on scifact (5.2k corpus, 300 queries, ~1.1 judged per query, binary labels), paper prompt, top-20, greedy decoding, single window.
+
+model:
+  model_path: models/Qwen2.5-7B-Instruct
+  model_label: qwen2.5-7b-instruct
+  dtype: bfloat16
+  max_model_len: 16384
+  gpu_memory_utilization: 0.90
+  tensor_parallel_size: 1
+  enforce_eager: false
+  seed: 0
+  temperature: 0.0
+  top_p: 1.0

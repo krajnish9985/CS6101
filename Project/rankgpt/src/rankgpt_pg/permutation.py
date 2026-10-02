@@ -55,6 +55,7 @@ class ParseResult:
     is_clean: bool = False
     is_total_failure: bool = False
     notes: List[str] = field(default_factory=list)
+    identifier_inflation: float = 0.0
 
     def stats(self) -> Dict[str, Any]:
         """Flat dict for the per-query JSONL log and the summary table."""
@@ -67,6 +68,7 @@ class ParseResult:
             "is_clean": self.is_clean,
             "is_total_failure": self.is_total_failure,
             "notes": self.notes,
+            "identifier_inflation": self.identifier_inflation,
         }
 
 
@@ -115,6 +117,13 @@ def parse_permutation(raw_text: str, num: int) -> ParseResult:
         strategy=strategy,
         n_identifiers_parsed=len(identifiers),
     )
+
+    # Ratio of identifiers emitted to passages shown. A well-formed
+    # permutation sits near 1.0; a value well above it means the model
+    # produced something other than a ranking (e.g. pairwise comparisons),
+    # which the repair steps below will silently turn into a valid but
+    # meaningless permutation.
+    result.identifier_inflation = round(len(identifiers) / num, 2)
 
     if not identifiers:
         result.n_missing = num

@@ -66,3 +66,7 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+
+.hf_home/
+__pycache__/

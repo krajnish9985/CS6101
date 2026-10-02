@@ -1,0 +1,25 @@
+run_name: llama8b_covid_top20_paper
+dataset: covid
+data: data/covid/covid_reranking_data.jsonl
+
+depth: 20
+prompt: paper
+max_passage_words: 300
+
+limit: null
+chunk_size: 64
+
+notes: >
+  llama-3.1-8b-instruct on covid (171k corpus, 50 queries, ~1327 judged per query, graded labels), paper prompt, top-20, greedy decoding, single window.
+
+model:
+  model_path: models/Llama-3.1-8B-Instruct
+  model_label: llama-3.1-8b-instruct
+  dtype: bfloat16
+  max_model_len: 16384
+  gpu_memory_utilization: 0.90
+  tensor_parallel_size: 1
+  enforce_eager: false
+  seed: 0
+  temperature: 0.0
+  top_p: 1.0
