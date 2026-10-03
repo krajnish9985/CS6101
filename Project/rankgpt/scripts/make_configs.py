@@ -30,11 +30,11 @@ MODELS = {
     "qwen7b": ("models/Qwen2.5-7B-Instruct", "qwen2.5-7b-instruct", 1),
 }
 
-# The paper prompt is the canonical one for cross-dataset comparison.
-# `compact` stays a SciFact-only ablation so the main table varies one
-# thing at a time.
-PROMPTS = ("paper",)
-ABLATION_PROMPTS = {"scifact": ("paper", "compact")}
+# Both prompt variants on every dataset: the compact-vs-paper comparison
+# then rests on eight cells rather than one, which is what makes it a
+# finding rather than an anecdote.
+PROMPTS = ("paper", "compact")
+ABLATION_PROMPTS = {}
 
 TEMPLATE = """\
 run_name: {run_name}

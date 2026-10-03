@@ -1,0 +1,25 @@
+run_name: llama8b_nfcorpus_top20_compact
+dataset: nfcorpus
+data: data/nfcorpus/nfcorpus_reranking_data.jsonl
+
+depth: 20
+prompt: compact
+max_passage_words: 300
+
+limit: null
+chunk_size: 64
+
+notes: >
+  llama-3.1-8b-instruct on nfcorpus (3.6k corpus, 323 queries, ~38 judged per query, graded labels), compact prompt, top-20, greedy decoding, single window.
+
+model:
+  model_path: models/Llama-3.1-8B-Instruct
+  model_label: llama-3.1-8b-instruct
+  dtype: bfloat16
+  max_model_len: 16384
+  gpu_memory_utilization: 0.90
+  tensor_parallel_size: 1
+  enforce_eager: false
+  seed: 0
+  temperature: 0.0
+  top_p: 1.0
