@@ -1,0 +1,15 @@
+{
+  "time": "18:31:23",
+  "files": [
+    {
+      "status": {
+        "file": "indices/disk_msmarco/disk.index",
+        "resident_bytes": 3128909824,
+        "resident_pages": 763894,
+        "size_bytes": 7243227136,
+        "resident_pct": 43.19773169129015,
+        "tool": "fincore"
+      }
+    }
+  ]
+}

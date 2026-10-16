@@ -1,0 +1,18 @@
+{
+  "dataset": "msmarco",
+  "method": "FAISS IndexFlatL2 (exact)",
+  "system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 17:49:25"
+  },
+  "build_threads": 16,
+  "build_time_s": 7.585173774044961,
+  "gt_compute_time_s": 263.91441910597496,
+  "index_size_bytes": 4527013376,
+  "num_queries": 6980,
+  "recall_1_at_1": 1.0,
+  "recall_10_at_10": 1.0
+}

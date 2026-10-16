@@ -1,0 +1,8 @@
+data/
+indices/
+build/
+logs/
+__pycache__/
+*.pyc
+*.log
+logs_ec.txt

@@ -1,0 +1,142 @@
+{
+  "dataset": "sift1m",
+  "method": "FAISS IndexHNSWFlat",
+  "M": 32,
+  "efConstruction": 200,
+  "index_size_bytes": 784129506,
+  "build_time_s": 199.11684673000127,
+  "build_threads": 16,
+  "peak_rss_MiB_after_build": 1323.9765625,
+  "system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:24:15"
+  },
+  "eval_system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:24:40"
+  },
+  "timing_threads": 1,
+  "query_mode": "one query per search() call",
+  "timing_queries": 1000,
+  "recall_queries": 10000,
+  "points": [
+    {
+      "efSearch": 16,
+      "recall_1_at_1": 0.9062,
+      "recall_10_at_10": 0.85749,
+      "mean_latency_ms": 0.06331301759928465,
+      "p50_latency_ms": 0.06315764039754868,
+      "p95_latency_ms": 0.08499849354848264,
+      "qps": 15794.540173856736,
+      "repeat_mean_latencies_ms": [
+        0.063027337891981,
+        0.06331301759928465,
+        0.06347079598344862
+      ]
+    },
+    {
+      "efSearch": 32,
+      "recall_1_at_1": 0.9599,
+      "recall_10_at_10": 0.94018,
+      "mean_latency_ms": 0.10133366636000574,
+      "p50_latency_ms": 0.10331301018595695,
+      "p95_latency_ms": 0.12971608666703105,
+      "qps": 9868.388620691207,
+      "repeat_mean_latencies_ms": [
+        0.10129596991464496,
+        0.10133366636000574,
+        0.1017124115023762
+      ]
+    },
+    {
+      "efSearch": 64,
+      "recall_1_at_1": 0.9834,
+      "recall_10_at_10": 0.98066,
+      "mean_latency_ms": 0.17375870794057846,
+      "p50_latency_ms": 0.17811707220971584,
+      "p95_latency_ms": 0.21917187841609118,
+      "qps": 5755.107251039052,
+      "repeat_mean_latencies_ms": [
+        0.1729092502500862,
+        0.17375870794057846,
+        0.18562635593116283
+      ]
+    },
+    {
+      "efSearch": 100,
+      "recall_1_at_1": 0.9893,
+      "recall_10_at_10": 0.9919600000000001,
+      "mean_latency_ms": 0.25228312821127474,
+      "p50_latency_ms": 0.25964947417378426,
+      "p95_latency_ms": 0.3187070949934423,
+      "qps": 3963.80054064713,
+      "repeat_mean_latencies_ms": [
+        0.2512307350989431,
+        0.25228312821127474,
+        0.25263567734509706
+      ]
+    },
+    {
+      "efSearch": 150,
+      "recall_1_at_1": 0.9913,
+      "recall_10_at_10": 0.99637,
+      "mean_latency_ms": 0.3606577510945499,
+      "p50_latency_ms": 0.3730959724634886,
+      "p95_latency_ms": 0.45621603494510055,
+      "qps": 2772.711793840916,
+      "repeat_mean_latencies_ms": [
+        0.35539754619821906,
+        0.3606577510945499,
+        0.3659694099333137
+      ]
+    },
+    {
+      "efSearch": 200,
+      "recall_1_at_1": 0.9921,
+      "recall_10_at_10": 0.99795,
+      "mean_latency_ms": 0.4537991168908775,
+      "p50_latency_ms": 0.47013757284730673,
+      "p95_latency_ms": 0.5757125560194253,
+      "qps": 2203.6182151506137,
+      "repeat_mean_latencies_ms": [
+        0.4531231664586812,
+        0.4537991168908775,
+        0.45464875688776374
+      ]
+    },
+    {
+      "efSearch": 256,
+      "recall_1_at_1": 0.9924,
+      "recall_10_at_10": 0.99878,
+      "mean_latency_ms": 0.5625250081066042,
+      "p50_latency_ms": 0.5823865067213774,
+      "p95_latency_ms": 0.7164376555010676,
+      "qps": 1777.6987433250076,
+      "repeat_mean_latencies_ms": [
+        0.561220824252814,
+        0.5625250081066042,
+        0.5626203739084303
+      ]
+    },
+    {
+      "efSearch": 512,
+      "recall_1_at_1": 0.9926,
+      "recall_10_at_10": 0.99929,
+      "mean_latency_ms": 1.0425933056976646,
+      "p50_latency_ms": 1.0761235607787967,
+      "p95_latency_ms": 1.3190595898777246,
+      "qps": 959.146768481155,
+      "repeat_mean_latencies_ms": [
+        1.0401748172007501,
+        1.0425933056976646,
+        1.0470601820852607
+      ]
+    }
+  ]
+}

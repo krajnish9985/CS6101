@@ -1,0 +1,31 @@
+{
+  "dataset": "quora",
+  "method": "FAISS IndexFlatL2 (exact)",
+  "system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:16:24"
+  },
+  "build_threads": 16,
+  "build_time_s": 0.16234395606443286,
+  "gt_compute_time_s": 4.114323288900778,
+  "index_size_bytes": 267740672,
+  "num_queries": 10000,
+  "recall_1_at_1": 1.0,
+  "recall_10_at_10": 1.0,
+  "mean_latency_ms": 12.868196428520605,
+  "p50_latency_ms": 12.788963969796896,
+  "p95_latency_ms": 13.226627011317758,
+  "qps": 77.71096793204339,
+  "timing_threads": 1,
+  "query_mode": "one query per search() call",
+  "timing_queries": 1000,
+  "repeat_mean_latencies_ms": [
+    12.848443934693933,
+    12.868196428520605,
+    12.878942266805097
+  ],
+  "peak_rss_MiB": 592.6796875
+}

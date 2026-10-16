@@ -1,0 +1,142 @@
+{
+  "dataset": "nq",
+  "method": "FAISS IndexHNSWFlat",
+  "M": 32,
+  "efConstruction": 200,
+  "index_size_bytes": 2102656178,
+  "build_time_s": 656.9355433001183,
+  "build_threads": 16,
+  "peak_rss_MiB_after_build": 3475.28515625,
+  "system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:37:24"
+  },
+  "eval_system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:37:41"
+  },
+  "timing_threads": 1,
+  "query_mode": "one query per search() call",
+  "timing_queries": 1000,
+  "recall_queries": 3452,
+  "points": [
+    {
+      "efSearch": 16,
+      "recall_1_at_1": 0.9264194669756662,
+      "recall_10_at_10": 0.8864716106604866,
+      "mean_latency_ms": 0.07659691688604653,
+      "p50_latency_ms": 0.07345713675022125,
+      "p95_latency_ms": 0.10853218846023083,
+      "qps": 13055.355759131964,
+      "repeat_mean_latencies_ms": [
+        0.07628182857297361,
+        0.07659691688604653,
+        0.08254796708934009
+      ]
+    },
+    {
+      "efSearch": 32,
+      "recall_1_at_1": 0.9617612977983777,
+      "recall_10_at_10": 0.9456257242178447,
+      "mean_latency_ms": 0.1162953875027597,
+      "p50_latency_ms": 0.11331704445183277,
+      "p95_latency_ms": 0.16094676684588186,
+      "qps": 8598.793309633797,
+      "repeat_mean_latencies_ms": [
+        0.11495494865812361,
+        0.1162953875027597,
+        0.11879552365280688
+      ]
+    },
+    {
+      "efSearch": 64,
+      "recall_1_at_1": 0.9831981460023175,
+      "recall_10_at_10": 0.9761008111239861,
+      "mean_latency_ms": 0.19472029292955995,
+      "p50_latency_ms": 0.19072601571679115,
+      "p95_latency_ms": 0.2601378713734448,
+      "qps": 5135.571567580529,
+      "repeat_mean_latencies_ms": [
+        0.19408432627096772,
+        0.19472029292955995,
+        0.19553431891836226
+      ]
+    },
+    {
+      "efSearch": 100,
+      "recall_1_at_1": 0.9892815758980301,
+      "recall_10_at_10": 0.9870799536500579,
+      "mean_latency_ms": 0.28085070895031095,
+      "p50_latency_ms": 0.27582491748034954,
+      "p95_latency_ms": 0.3738954896107316,
+      "qps": 3560.610559743765,
+      "repeat_mean_latencies_ms": [
+        0.2808043169789016,
+        0.28085070895031095,
+        0.28314609243534505
+      ]
+    },
+    {
+      "efSearch": 150,
+      "recall_1_at_1": 0.9942062572421785,
+      "recall_10_at_10": 0.9926709154113558,
+      "mean_latency_ms": 0.40092835226096213,
+      "p50_latency_ms": 0.3938655136153102,
+      "p95_latency_ms": 0.5356752895750104,
+      "qps": 2494.2112334053772,
+      "repeat_mean_latencies_ms": [
+        0.398289400851354,
+        0.40092835226096213,
+        0.4131716585252434
+      ]
+    },
+    {
+      "efSearch": 200,
+      "recall_1_at_1": 0.9950753186558516,
+      "recall_10_at_10": 0.9948146002317497,
+      "mean_latency_ms": 0.5184182063676417,
+      "p50_latency_ms": 0.5096370587125421,
+      "p95_latency_ms": 0.6988697801716625,
+      "qps": 1928.9446005506209,
+      "repeat_mean_latencies_ms": [
+        0.5129826471675187,
+        0.5184182063676417,
+        0.5302160507999361
+      ]
+    },
+    {
+      "efSearch": 256,
+      "recall_1_at_1": 0.9953650057937428,
+      "recall_10_at_10": 0.9960892236384705,
+      "mean_latency_ms": 0.6369467673357576,
+      "p50_latency_ms": 0.6275520427152514,
+      "p95_latency_ms": 0.8585929870605469,
+      "qps": 1569.9899132588955,
+      "repeat_mean_latencies_ms": [
+        0.6352520997170359,
+        0.6369467673357576,
+        0.6466424067039043
+      ]
+    },
+    {
+      "efSearch": 512,
+      "recall_1_at_1": 0.9982618771726536,
+      "recall_10_at_10": 0.998667439165701,
+      "mean_latency_ms": 1.1996840029023588,
+      "p50_latency_ms": 1.1922020930796862,
+      "p95_latency_ms": 1.589089271146804,
+      "qps": 833.5528335634472,
+      "repeat_mean_latencies_ms": [
+        1.1985934898257256,
+        1.1996840029023588,
+        1.219986330717802
+      ]
+    }
+  ]
+}

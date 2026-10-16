@@ -1,0 +1,31 @@
+{
+  "dataset": "sift100k",
+  "method": "FAISS IndexFlatL2 (exact)",
+  "system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:12:16"
+  },
+  "build_threads": 16,
+  "build_time_s": 0.030334601877257228,
+  "gt_compute_time_s": 0.8586916208732873,
+  "index_size_bytes": 51200000,
+  "num_queries": 10000,
+  "recall_1_at_1": 1.0,
+  "recall_10_at_10": 1.0,
+  "mean_latency_ms": 2.2245434855576605,
+  "p50_latency_ms": 2.188500016927719,
+  "p95_latency_ms": 2.493787684943526,
+  "qps": 449.530434667729,
+  "timing_threads": 1,
+  "query_mode": "one query per search() call",
+  "timing_queries": 1000,
+  "repeat_mean_latencies_ms": [
+    2.2054865926038474,
+    2.2245434855576605,
+    2.2935325927101076
+  ],
+  "peak_rss_MiB": 177.7890625
+}

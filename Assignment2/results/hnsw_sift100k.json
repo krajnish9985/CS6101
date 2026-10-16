@@ -1,0 +1,142 @@
+{
+  "dataset": "sift100k",
+  "method": "FAISS IndexHNSWFlat",
+  "M": 32,
+  "efConstruction": 200,
+  "index_size_bytes": 78420834,
+  "build_time_s": 4.917649559909478,
+  "build_threads": 16,
+  "peak_rss_MiB_after_build": 176.3359375,
+  "system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:20:44"
+  },
+  "eval_system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 02:20:56"
+  },
+  "timing_threads": 1,
+  "query_mode": "one query per search() call",
+  "timing_queries": 1000,
+  "recall_queries": 10000,
+  "points": [
+    {
+      "efSearch": 16,
+      "recall_1_at_1": 0.9472,
+      "recall_10_at_10": 0.90771,
+      "mean_latency_ms": 0.04204595251940191,
+      "p50_latency_ms": 0.04196842201054096,
+      "p95_latency_ms": 0.05315210437402129,
+      "qps": 23783.502099008332,
+      "repeat_mean_latencies_ms": [
+        0.042002067901194096,
+        0.04204595251940191,
+        0.042962016304954886
+      ]
+    },
+    {
+      "efSearch": 32,
+      "recall_1_at_1": 0.985,
+      "recall_10_at_10": 0.97047,
+      "mean_latency_ms": 0.06828024284914136,
+      "p50_latency_ms": 0.06908888462930918,
+      "p95_latency_ms": 0.08507559541612862,
+      "qps": 14645.524946497395,
+      "repeat_mean_latencies_ms": [
+        0.0675088360439986,
+        0.06828024284914136,
+        0.06914910417981446
+      ]
+    },
+    {
+      "efSearch": 64,
+      "recall_1_at_1": 0.9971,
+      "recall_10_at_10": 0.9933500000000001,
+      "mean_latency_ms": 0.1150591904297471,
+      "p50_latency_ms": 0.11732394341379404,
+      "p95_latency_ms": 0.14166799373924732,
+      "qps": 8691.178829478906,
+      "repeat_mean_latencies_ms": [
+        0.11491584056057036,
+        0.1150591904297471,
+        0.11563760438002646
+      ]
+    },
+    {
+      "efSearch": 100,
+      "recall_1_at_1": 0.9992,
+      "recall_10_at_10": 0.99756,
+      "mean_latency_ms": 0.1640743298921734,
+      "p50_latency_ms": 0.16848393715918064,
+      "p95_latency_ms": 0.20214137621223927,
+      "qps": 6094.798623631017,
+      "repeat_mean_latencies_ms": [
+        0.16358993365429342,
+        0.1640743298921734,
+        0.16427088109776378
+      ]
+    },
+    {
+      "efSearch": 150,
+      "recall_1_at_1": 0.9996,
+      "recall_10_at_10": 0.99916,
+      "mean_latency_ms": 0.2319208972621709,
+      "p50_latency_ms": 0.2370770089328289,
+      "p95_latency_ms": 0.2838905551470816,
+      "qps": 4311.814984354633,
+      "repeat_mean_latencies_ms": [
+        0.23063546186313033,
+        0.2319208972621709,
+        0.2431974697392434
+      ]
+    },
+    {
+      "efSearch": 200,
+      "recall_1_at_1": 0.9997,
+      "recall_10_at_10": 0.9996600000000001,
+      "mean_latency_ms": 0.29128441167995334,
+      "p50_latency_ms": 0.29752543196082115,
+      "p95_latency_ms": 0.3580235061235726,
+      "qps": 3433.070771733376,
+      "repeat_mean_latencies_ms": [
+        0.2889938245061785,
+        0.29128441167995334,
+        0.2914673911873251
+      ]
+    },
+    {
+      "efSearch": 256,
+      "recall_1_at_1": 0.9998,
+      "recall_10_at_10": 0.9997999999999999,
+      "mean_latency_ms": 0.36243705241940916,
+      "p50_latency_ms": 0.36918395198881626,
+      "p95_latency_ms": 0.44724288163706655,
+      "qps": 2759.09980319233,
+      "repeat_mean_latencies_ms": [
+        0.3580287229269743,
+        0.36243705241940916,
+        0.3643676699139178
+      ]
+    },
+    {
+      "efSearch": 512,
+      "recall_1_at_1": 1.0,
+      "recall_10_at_10": 0.9999800000000001,
+      "mean_latency_ms": 0.653701406205073,
+      "p50_latency_ms": 0.6629674462601542,
+      "p95_latency_ms": 0.7937661022879183,
+      "qps": 1529.7504189340684,
+      "repeat_mean_latencies_ms": [
+        0.6533636255189776,
+        0.653701406205073,
+        0.6542066838592291
+      ]
+    }
+  ]
+}

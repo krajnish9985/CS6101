@@ -1,0 +1,43 @@
+{
+  "dataset": "msmarco",
+  "mode": "warm",
+  "L_search": 150,
+  "beam_width_W": 4,
+  "num_queries": 6980,
+  "recall_1_at_1": 0.9786532951289398,
+  "recall_10_at_10": 0.9741547277936963,
+  "mean_latency_ms": 0.8157698806498018,
+  "p50_latency_ms": 0.8049020543694496,
+  "p95_latency_ms": 1.01193212904036,
+  "qps": 1225.835892842047,
+  "mean_latency_first100_ms": 0.8097378839738667,
+  "reads_per_query": 175.93510028653296,
+  "bytes_read_per_query": 720630.170773639,
+  "rounds_per_query": 45.7378223495702,
+  "expansions_per_query": 177.3618911174785,
+  "pq_dists_per_query": 4177.321776504298,
+  "full_dists_per_query": 177.3618911174785,
+  "storage_bytes_per_query": 0.0,
+  "fincore_before_run": {
+    "file": "/tmp/vamsi_pa2/pa2_ann/indices/disk_msmarco/disk.index",
+    "resident_bytes": 3128909824,
+    "resident_pages": 763894,
+    "size_bytes": 7243227136,
+    "resident_pct": 43.19773169129015,
+    "tool": "fincore"
+  },
+  "peak_rss_MiB": 345.7734375,
+  "rlimit_as_bytes": 8589934592,
+  "resident_structures_bytes": 318436700,
+  "index_load_s": 0.09412463591434062,
+  "disk_index_bytes": 7243227136,
+  "system": {
+    "hostname": "user4-MS-7C96",
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpus_available": 16,
+    "slurm_job_id": null,
+    "time": "2026-10-16 18:31:40"
+  },
+  "threads": 1,
+  "query_mode": "one query per call"
+}

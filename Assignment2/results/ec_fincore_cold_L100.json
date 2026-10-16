@@ -1,0 +1,23 @@
+{
+  "time": "18:29:07",
+  "files": [
+    {
+      "before": {
+        "file": "indices/disk_msmarco/disk.index",
+        "resident_bytes": 1335304192,
+        "resident_pages": 326002,
+        "size_bytes": 7243227136,
+        "resident_pct": 18.435210810431776,
+        "tool": "fincore"
+      },
+      "after": {
+        "file": "indices/disk_msmarco/disk.index",
+        "resident_bytes": 0,
+        "resident_pages": 0,
+        "size_bytes": 7243227136,
+        "resident_pct": 0.0,
+        "tool": "fincore"
+      }
+    }
+  ]
+}
